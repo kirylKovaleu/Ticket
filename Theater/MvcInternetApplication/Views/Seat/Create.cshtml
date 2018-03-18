@@ -1,0 +1,43 @@
+﻿@model MvcInternetApplication.Models.Seat
+
+@{
+    ViewBag.Title = @App_LocalResources.GlobalRes.Добавление;
+}
+
+
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Seat</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Name)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Name)
+            @Html.ValidationMessageFor(model => model.Name)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Price)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Price)
+            @Html.ValidationMessageFor(model => model.Price)
+        </div>
+
+        <p>
+            <input type="submit" value="@App_LocalResources.GlobalRes.Добавить" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.RouteLink(@App_LocalResources.GlobalRes.Назад, new { controller = "Home", action = "AdminPanel", area = "" });
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

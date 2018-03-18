@@ -1,0 +1,54 @@
+﻿@model MvcInternetApplication.Models.Performance
+
+@{
+    ViewBag.Title = @App_LocalResources.GlobalRes.Удаление;
+}
+
+<h2>Delete</h2>
+
+<h3>@App_LocalResources.GlobalRes.ТочноУдалить</h3>
+<fieldset>
+    <legend>Performance</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Name)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Autor)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Autor)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Actors)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Actors)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Duration)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Duration)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Description)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Description)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    <p>
+        <input type="submit" value="@App_LocalResources.GlobalRes.Удалить" /> |
+        @Html.ActionLink(@App_LocalResources.GlobalRes.Назад, "Index")
+    </p>
+}

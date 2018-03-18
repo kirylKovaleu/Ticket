@@ -1,0 +1,18 @@
+<?xml version="1.1" encoding="UTF-8" ?>
+<seats>
+	<seat>
+		<number>1</number>
+		<category>balcony</category>
+		<price>100000</price>
+	</seat>
+	<seat>
+		<number>2</number>
+		<category>balcony</category>
+		<price>100000</price>
+	</seat>
+	<seat>
+		<number>3</number>
+		<category>hall</category>
+		<price>70000</price>
+	</seat>
+</seats>

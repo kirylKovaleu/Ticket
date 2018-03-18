@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Admin" xml:space="preserve">
+    <value>管理員</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>房子</value>
+  </data>
+  <data name="UserPaid" xml:space="preserve">
+    <value>已註冊用戶</value>
+  </data>
+  <data name="Администратор" xml:space="preserve">
+    <value>管理員</value>
+  </data>
+  <data name="Актеры" xml:space="preserve">
+    <value>演員</value>
+  </data>
+  <data name="АЧтоПокорочеИмечкаНету" xml:space="preserve">
+    <value>而那短名稱不存在？</value>
+  </data>
+  <data name="АЭтуСтрочечкуЗаполнятьНеНужно" xml:space="preserve">
+    <value>而你並不需要填寫這一行？</value>
+  </data>
+  <data name="ВведитеЛогинИПароль" xml:space="preserve">
+    <value>輸入您的用戶名和密碼</value>
+  </data>
+  <data name="Выкупить" xml:space="preserve">
+    <value>贖回</value>
+  </data>
+  <data name="ДаВыкупить" xml:space="preserve">
+    <value>是的，兌換</value>
+  </data>
+  <data name="Дата" xml:space="preserve">
+    <value>日期</value>
+  </data>
+  <data name="Добавить" xml:space="preserve">
+    <value>添加</value>
+  </data>
+  <data name="Добавление" xml:space="preserve">
+    <value>加法</value>
+  </data>
+  <data name="ДоброПожаловать" xml:space="preserve">
+    <value>歡迎</value>
+  </data>
+  <data name="Забронировать" xml:space="preserve">
+    <value>書</value>
+  </data>
+  <data name="ЗамечательнаяПьесаБезАктеровЗаТоНиКтоНеНадоест" xml:space="preserve">
+    <value>沒有演員的精彩發揮，但誰也不厭倦</value>
+  </data>
+  <data name="ЗапомнитьМеня" xml:space="preserve">
+    <value>記住我</value>
+  </data>
+  <data name="Имя" xml:space="preserve">
+    <value>名</value>
+  </data>
+  <data name="Контакты" xml:space="preserve">
+    <value>往來</value>
+  </data>
+  <data name="Курьер" xml:space="preserve">
+    <value>信使</value>
+  </data>
+  <data name="ЛичныйКабинет" xml:space="preserve">
+    <value>私人辦公室</value>
+  </data>
+  <data name="Назад" xml:space="preserve">
+    <value>前</value>
+  </data>
+  <data name="НазваниеПьесы" xml:space="preserve">
+    <value>該劇的名字</value>
+  </data>
+  <data name="НеЛучшеПивкаПопью" xml:space="preserve">
+    <value>不，更好的啤酒</value>
+  </data>
+  <data name="НеНуЛюдиДолжныЗнатьОЧемРечь" xml:space="preserve">
+    <value>不是很好，至少暗示這個傑作</value>
+  </data>
+  <data name="НовыйПароль" xml:space="preserve">
+    <value>新密碼</value>
+  </data>
+  <data name="НомерМеста" xml:space="preserve">
+    <value>的名額</value>
+  </data>
+  <data name="НуИКудаЭтоПисатьСократиНазвание" xml:space="preserve">
+    <value>好了，在這裡寫呢？縮短名稱</value>
+  </data>
+  <data name="ОбластьЗала" xml:space="preserve">
+    <value>展館面積</value>
+  </data>
+  <data name="ОнаСамаСебяСнимает" xml:space="preserve">
+    <value>她自己需要？</value>
+  </data>
+  <data name="Описание" xml:space="preserve">
+    <value>描述</value>
+  </data>
+  <data name="ОшибкаВводаПароля" xml:space="preserve">
+    <value>密碼輸入錯誤</value>
+  </data>
+  <data name="ПанельАдминистратора" xml:space="preserve">
+    <value>管理面板</value>
+  </data>
+  <data name="ПаролиНеСовпадают" xml:space="preserve">
+    <value>密碼不匹配</value>
+  </data>
+  <data name="Пароль" xml:space="preserve">
+    <value>密碼</value>
+  </data>
+  <data name="ПовторитеПароль" xml:space="preserve">
+    <value>重複密碼</value>
+  </data>
+  <data name="Подробно" xml:space="preserve">
+    <value>細節</value>
+  </data>
+  <data name="ПосмотретьЗарегистрированыхПользователей" xml:space="preserve">
+    <value>註冊用戶查看</value>
+  </data>
+  <data name="ПосмотретьСвободныеМеста" xml:space="preserve">
+    <value>查看職位空缺</value>
+  </data>
+  <data name="ПосмотретьСписокПьес" xml:space="preserve">
+    <value>查看劇目</value>
+  </data>
+  <data name="Продолжительность" xml:space="preserve">
+    <value>為期</value>
+  </data>
+  <data name="Регистрация" xml:space="preserve">
+    <value>註冊</value>
+  </data>
+  <data name="Редактирование" xml:space="preserve">
+    <value>編輯</value>
+  </data>
+  <data name="Редактировать" xml:space="preserve">
+    <value>編輯</value>
+  </data>
+  <data name="Режиссер" xml:space="preserve">
+    <value>導演</value>
+  </data>
+  <data name="РезультатОплаты" xml:space="preserve">
+    <value>支付分數</value>
+  </data>
+  <data name="Сourier" xml:space="preserve">
+    <value>信使</value>
+  </data>
+  <data name="СозданиеНовогоАккаунта" xml:space="preserve">
+    <value>創建新帳號</value>
+  </data>
+  <data name="СоздатьНовуюПьесу" xml:space="preserve">
+    <value>創建一個新戲</value>
+  </data>
+  <data name="СоздатьНовыеМестаВЗале" xml:space="preserve">
+    <value>建立在大廳裡的新空間</value>
+  </data>
+  <data name="Сохранить" xml:space="preserve">
+    <value>保留</value>
+  </data>
+  <data name="СписокПокупателей" xml:space="preserve">
+    <value>客戶名單</value>
+  </data>
+  <data name="Стартовая" xml:space="preserve">
+    <value>家</value>
+  </data>
+  <data name="СтраницаПодтвержденияЗаказа" xml:space="preserve">
+    <value>訂單確認頁面</value>
+  </data>
+  <data name="Театр" xml:space="preserve">
+    <value>劇院</value>
+  </data>
+  <data name="ТоестьОнаНиКогдаНеЗакончится" xml:space="preserve">
+    <value>我的理解可能沒有結束的時候？</value>
+  </data>
+  <data name="ТыНеПоверишьНоИЭтоПолеЖелательноЗаполнить" xml:space="preserve">
+    <value>你不會相信，但它希望填補這一領域的</value>
+  </data>
+  <data name="ТыТакВсюПьесуРасскажешьКорочеНужно" xml:space="preserve">
+    <value>你這樣告訴整個發揮。總之，你需要</value>
+  </data>
+  <data name="ТыХорошоПодумал" xml:space="preserve">
+    <value>你想過嗎？</value>
+  </data>
+  <data name="УВасНетЗабронированыхБилетов" xml:space="preserve">
+    <value>你不必訂票</value>
+  </data>
+  <data name="Удаление" xml:space="preserve">
+    <value>切除</value>
+  </data>
+  <data name="Удалить" xml:space="preserve">
+    <value>刪除</value>
+  </data>
+  <data name="Цена" xml:space="preserve">
+    <value>價格</value>
+  </data>
+  <data name="Язык" xml:space="preserve">
+    <value>語言</value>
+  </data>
+  <data name="Вход" xml:space="preserve">
+    <value>入口</value>
+  </data>
+  <data name="Применить" xml:space="preserve">
+    <value>申請</value>
+  </data>
+  <data name="БеднягаНеПроскочилДавайЕщеПоугадывай" xml:space="preserve">
+    <value>這個可憐的人不會下滑？讓我們試著</value>
+  </data>
+  <data name="Hello" xml:space="preserve">
+    <value>你好</value>
+  </data>
+  <data name="ВведитеСтарыйПароль" xml:space="preserve">
+    <value>輸入舊密碼</value>
+  </data>
+  <data name="ВыВошлиКак" xml:space="preserve">
+    <value>您登錄為</value>
+  </data>
+  <data name="СменаПароля" xml:space="preserve">
+    <value>密碼更改</value>
+  </data>
+  <data name="НеОплачено" xml:space="preserve">
+    <value>沒有支付</value>
+  </data>
+  <data name="Оплачено" xml:space="preserve">
+    <value>支付</value>
+  </data>
+  <data name="СвободныеМеста" xml:space="preserve">
+    <value>免費名額</value>
+  </data>
+</root>

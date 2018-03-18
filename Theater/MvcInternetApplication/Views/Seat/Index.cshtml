@@ -1,0 +1,36 @@
+﻿@model IEnumerable<MvcInternetApplication.Models.Seat>
+
+<h2>@App_LocalResources.GlobalRes.СвободныеМеста @ViewBag.Message</h2>
+
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.SeatId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Price)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.SeatId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Price)
+        </td>
+        <td>
+            @Html.RouteLink(App_LocalResources.GlobalRes.Выкупить, new { controller = "UserPaid", action = "Create", area = "", @item.SeatId,@ViewBag.Id })
+        </td>
+    </tr>
+}
+
+</table>

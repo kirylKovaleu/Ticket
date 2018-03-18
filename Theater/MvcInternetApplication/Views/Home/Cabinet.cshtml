@@ -1,0 +1,55 @@
+﻿@model IEnumerable<MvcInternetApplication.Models.UserPaidShow>
+@{
+    ViewBag.Title = @App_LocalResources.GlobalRes.ЛичныйКабинет;
+}
+
+<hgroup class="title">
+    <h1>@ViewBag.Title.</h1>
+    <h2>@ViewBag.Message</h2>
+</hgroup>
+
+<ul id="menu">
+    @Html.ActionLink(@App_LocalResources.GlobalRes.Забронировать, "Index", "Performances")
+</ul>
+
+    @if (ViewBag.User.Count == 0)
+    {
+        <h3>@App_LocalResources.GlobalRes.УВасНетЗабронированыхБилетов</h3>
+    }
+
+    <table>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Performance)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Date)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SeatId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Payment)
+            </th>
+
+            <th></th>
+        </tr>
+        @foreach (var item in ViewBag.User)
+        {
+            <tr>
+                <td>
+                    @item.Performance
+                </td>
+                <td>
+                    @item.Date
+                </td>
+                <td>
+                    @item.SeatId
+                </td>
+                <td>
+                    @item.Payment
+                </td>
+            </tr>
+        }
+
+    </table>

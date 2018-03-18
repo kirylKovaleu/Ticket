@@ -1,0 +1,56 @@
+﻿@model MvcInternetApplication.Models.Performance
+
+@{
+    ViewBag.Title = @App_LocalResources.GlobalRes.Подробно;
+}
+
+<h2>Подробно @ViewBag.Message</h2>
+
+<fieldset>
+    <legend>Performance</legend>
+
+    <div class="display-label">
+         <h4>@Html.DisplayNameFor(model => model.Name)</h4>
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Name)
+    </div>
+
+    <div class="display-label">
+        <h4> @Html.DisplayNameFor(model => model.Date)</h4>
+    </div>
+    <div class="display-field">
+         @Html.DisplayFor(model => model.Date)
+    </div>
+
+    <div class="display-label">
+        <h4> @Html.DisplayNameFor(model => model.Autor)</h4>
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Autor)
+    </div>
+
+    <div class="display-label">
+        <h4> @Html.DisplayNameFor(model => model.Actors)</h4>
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Actors)
+    </div>
+
+    <div class="display-label">
+        <h4> @Html.DisplayNameFor(model => model.Duration)</h4>
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Duration)
+    </div>
+
+    <div class="display-label">
+        <h4> @Html.DisplayNameFor(model => model.Description)</h4>
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Description)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink(@App_LocalResources.GlobalRes.Назад, "Index")
+</p>

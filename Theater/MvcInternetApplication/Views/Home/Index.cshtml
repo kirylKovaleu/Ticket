@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = App_LocalResources.GlobalRes.Стартовая;
+}
+@section featured {
+    <section class="featured">
+        <div class="content-wrapper">
+            <hgroup class="title">
+                <h1>@ViewBag.Title.</h1>
+                <h2>@ViewBag.Message</h2>
+            </hgroup>
+                <h3>@Html.ActionLink(App_LocalResources.GlobalRes.ПосмотретьСписокПьес, "Index", "Performances")</h3>
+            </div>
+     </section>
+}
+<ol class="round">
+    
+    <p><img src="/Images/Theater.jpg" alt="Пример" width="940" height="300"></p>
+    
+</ol>

@@ -1,0 +1,20 @@
+﻿@model IEnumerable<MvcInternetApplication.Models.UserProfile>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h3>@App_LocalResources.GlobalRes.Имя</h3>
+
+<table>
+   
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.UserName)
+                @Html.RouteLink(App_LocalResources.GlobalRes.Удалить, new {controller = "Account",action = "Delete",area = "",@item.UserId })
+            </td>
+        </tr>
+    }
+
+</table>

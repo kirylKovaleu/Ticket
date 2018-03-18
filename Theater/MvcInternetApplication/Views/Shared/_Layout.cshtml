@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>@ViewBag.Title - My ASP.NET MVC Application</title>
+        <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <meta name="viewport" content="width=device-width" />
+        @Styles.Render("~/Content/css")
+        @Scripts.Render("~/bundles/modernizr")
+    </head>
+    <body>
+        <header>
+            <div class="content-wrapper">
+                <div class="float-left">
+                    <p class="site-title">@Html.ActionLink(@App_LocalResources.GlobalRes.Театр, "Index", "Home")</p>
+                </div>
+
+                @using (Html.BeginForm("ChangeCulture", "Home"))
+                {
+                    <select name="lang">
+                        <option disabled selected>@App_LocalResources.GlobalRes.Язык</option>
+                        <option value="ru">Русский</option>
+                        <option value="en">English</option>
+                        <option value="zh-hk">China</option>
+                    </select>
+                            <input type="submit" name="submit" value="@App_LocalResources.GlobalRes.Применить">
+                }
+
+                <div class="float-right">
+                    <section id="login">
+                        @Html.Partial("_LoginPartial")
+                    </section>
+                    <nav>
+                        <ul id="menu">
+                            <li>@Html.ActionLink(@App_LocalResources.GlobalRes.ЛичныйКабинет, "Cabinet", "Home")</li>
+                            <li>@Html.ActionLink(@App_LocalResources.GlobalRes.Администратор, "AdminPanel", "Home")</li>
+                            <li>@Html.ActionLink(@App_LocalResources.GlobalRes.Курьер, "Сourier", "Home")</li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+        </header>
+        <div id="body">
+            @RenderSection("featured", required: false)
+            <section class="content-wrapper main-content clear-fix">
+                @RenderBody()
+            </section>
+        </div>
+        <footer>
+            <div class="content-wrapper">
+                <div class="float-left">
+                   <h1> @Html.ActionLink(@App_LocalResources.GlobalRes.Контакты, "Contact", "Home")</h1>
+                </div>
+            </div>
+        </footer>
+
+        @Scripts.Render("~/bundles/jquery")
+        @RenderSection("scripts", required: false)
+    </body>
+</html>

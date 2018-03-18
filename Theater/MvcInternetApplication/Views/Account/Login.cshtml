@@ -1,0 +1,45 @@
+﻿@model MvcInternetApplication.Models.LoginModel
+
+@{
+    ViewBag.Title = @App_LocalResources.GlobalRes.Вход;
+}
+
+<hgroup class="title">
+    <h1>@ViewBag.Title.</h1>
+</hgroup>
+
+<section id="loginForm">
+<h2>@App_LocalResources.GlobalRes.ВведитеЛогинИПароль</h2>
+    @using (Html.BeginForm(new { ReturnUrl = ViewBag.ReturnUrl })) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(App_LocalResources.GlobalRes.БеднягаНеПроскочилДавайЕщеПоугадывай)
+
+    <fieldset>
+        <legend>@App_LocalResources.GlobalRes.ФормаДляАвторизации</legend>
+        <ol>
+            <li>
+                @Html.LabelFor(m => m.UserName)
+                @Html.TextBoxFor(m => m.UserName)
+                @Html.ValidationMessageFor(m => m.UserName)
+            </li>
+            <li>
+                @Html.LabelFor(m => m.Password)
+                @Html.PasswordFor(m => m.Password)
+                @Html.ValidationMessageFor(m => m.Password)
+            </li>
+            <li>
+                @Html.CheckBoxFor(m => m.RememberMe)
+                @Html.LabelFor(m => m.RememberMe, new { @class = "checkbox" })
+            </li>
+        </ol>
+        <input type="submit" value="@App_LocalResources.GlobalRes.Вход" />
+    </fieldset>
+    <p>
+        @Html.ActionLink(@App_LocalResources.GlobalRes.Регистрация, "Register") @App_LocalResources.GlobalRes.ЕслиНетАккаунта
+    </p>
+}
+</section>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

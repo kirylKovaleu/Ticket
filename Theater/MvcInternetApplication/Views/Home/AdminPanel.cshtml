@@ -1,0 +1,64 @@
+﻿@model IEnumerable<MvcInternetApplication.Models.Performance>
+@{
+    ViewBag.Title = @App_LocalResources.GlobalRes.ПанельАдминистратора;
+}
+
+<p>
+    @Html.ActionLink(@App_LocalResources.GlobalRes.СоздатьНовуюПьесу, "Create", "Performances")
+    @Html.RouteLink(@App_LocalResources.GlobalRes.ПосмотретьЗарегистрированыхПользователей, new { controller = "Account", action = "Index", area = "" })
+    @Html.RouteLink(@App_LocalResources.GlobalRes.СоздатьНовыеМестаВЗале, new { controller = "Seat", action = "Create", area = "" })
+</p>
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Date)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Autor)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Actors)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Duration)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Description)
+        </th>
+
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Date)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Autor)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Actors)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Duration)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+
+            <td>
+                @Html.RouteLink(@App_LocalResources.GlobalRes.Редактировать, new { controller = "Performances", action = "Edit", area = "", item.Id } )|
+                @Html.RouteLink(@App_LocalResources.GlobalRes.Удалить, new { controller = "Performances", action = "Delete", area = "", item.Id }) 
+            </td>
+        </tr>
+    }
+
+</table>

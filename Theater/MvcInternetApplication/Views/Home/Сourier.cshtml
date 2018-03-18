@@ -1,0 +1,11 @@
+﻿@model IEnumerable < MvcInternetApplication.Models.UserPaid >
+@{
+    ViewBag.Title = @App_LocalResources.GlobalRes.ДоброПожаловать;
+}
+
+<hgroup class="title">
+    <h1>@ViewBag.Title.</h1>
+    <h2>@ViewBag.Message</h2>
+</hgroup>
+
+@Html.RouteLink(@App_LocalResources.GlobalRes.СписокПокупателей, new{ Controller = "UserPaid",action = "Index",area = ""})
